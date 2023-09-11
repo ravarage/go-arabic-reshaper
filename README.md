@@ -4,17 +4,17 @@ A pure go library to handle Arabic text and it variant for rendering
 
 
 
-###ToDO
- Markup : - [x] Reshape Arabic,Kurdish,Persian and Urdo
-          - [x] Support Harakat
-          - [x] Shift Harakat
-          - [x] Remove Harakat
-          - [x] Support Tatweel
-          - [x] Support width JOINER
-          - [x] Use Unshaped instead of isolated form
-          - [ ] Support Ligatures
-          - [ ] Make it one loop.
-          - [ ] impove condintion
+### ToDO
+* [x] Reshape Arabic,Kurdish,Persian and Urdo
+* [x] Support Harakat
+* [x] Shift Harakat
+* [x] Remove Harakat
+* [x] Support Tatweel
+* [x] Support width JOINER
+* [x] Use Unshaped instead of isolated form
+* [ ] Support Ligatures
+* [ ] Make it one loop.
+* [ ] impove condintion
 
 
 
@@ -61,6 +61,7 @@ func main() {
 
 Creating config, defualt are false in all cases
 ```go
+
 go_arabic_reshaper.ArabicReshaper{
 		Language:                         "Arabic", // `Arabic` is default Kurdish, and Arabic_V2 is suppurted
 		Letters:                          nil,      //leave it be/ you can load your own letters array that match your case type map[rune][4]rune
@@ -73,5 +74,6 @@ go_arabic_reshaper.ArabicReshaper{
 		Support_ligatures: false, //# Whether to use ligatures or not. # Serves as a shortcut to disable all ligatures.not impliment yet
 
 	}
+
 ```
 
