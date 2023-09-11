@@ -10,7 +10,7 @@ A pure go library to handle Arabic text and it variant for rendering
 * [x] Shift Harakat
 * [x] Remove Harakat
 * [x] Support Tatweel
-* [x] Support width JOINER
+* [x] Support Zero Width JOINER
 * [x] Use Unshaped instead of isolated form
 * [ ] Support Ligatures
 * [ ] Make it one loop.
