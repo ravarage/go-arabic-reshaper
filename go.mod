@@ -1,3 +1,3 @@
-module go_arabic_reshaper
+module ./go_arabic_reshaper
 
 go 1.19
