@@ -63,17 +63,31 @@ Creating config, defualt are false in all cases
 ```go
 
 go_arabic_reshaper.ArabicReshaper{
-		Language:                         "Arabic", // `Arabic` is default Kurdish, and Arabic_V2 is suppurted
-		Letters:                          nil,      //leave it be/ you can load your own letters array that match your case type map[rune][4]rune
-		Delete_harakat:                   false,    // Whether to shift the Harakat (Tashkeel) one position so they appear correctly when string is reversed
-		Shift_harakat_position:           false,    // Whether to delete the Tatweel (U+0640) before reshaping or not.
-		Delete_tatweel:                   false,    // Whether to support ZWJ (U+200D) or not.
-		Support_zwj:                      false,    //# Use unshaped form instead of isolated form.
-		Use_unshaped_instead_of_isolated: false,    //# Use unshaped form instead of isolated form.
+Language:                         "Arabic",
+// `Arabic` is default Kurdish, and Arabic_V2 is suppurted
 
-		Support_ligatures: false, //# Whether to use ligatures or not. # Serves as a shortcut to disable all ligatures.not impliment yet
+Letters:                          nil,
+//leave it be/ you can load your own letters array that match your case type map[rune][4]rune
 
-	}
+Delete_harakat:                   false,
+// Whether to shift the Harakat (Tashkeel) one position so they appear correctly when string is reversed
+
+Shift_harakat_position:           false,
+// Whether to delete the Tatweel (U+0640) before reshaping or not.
+
+Delete_tatweel:                   false,
+// Whether to support ZWJ (U+200D) or not.
+
+Support_zwj:                      false,
+//# Use unshaped form instead of isolated form.
+
+Use_unshaped_instead_of_isolated: false,
+//# Use unshaped form instead of isolated form.
+
+Support_ligatures: false,
+// Whether to use ligatures or not. # Serves as a shortcut to disable all ligatures.not impliment yet
+
+}
 
 ```
 
